@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+    font-family: Arial;
+color: #3867d6;
+    padding: 20px;
+    background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+     background-color: white;
+     padding: 20px;
+     margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2>Відгуки про нас</h2>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Володимир Волков</h2>
+      <h5>Заказчик Павел отзыв по заказу</h5>
+     
+      <p>Все хорошо. Было несколько мискоммуникаций, но все проблемы решили.</p>
+     
+    </div>
+    <div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Володимир Волков</h2>
+      <h5>Заказчик Fynjy отзыв по заказу</h5>
+     
+      <p>Все хорошо.</p>
+     
+    </div>
+<form>
+<p> </p>
+ <label><b>ДОДАЙТЕ СВІЙ КОМЕНТАР </b></label>
+<P> </P>
+<label> Ім'я майстра <input type="number" name="k1" value="" placeholder="Ім'я майстра"> <label>
+<label> Ваше ім'я<input type="number" name="k1" value="" placeholder="Ваше ім'я">
+<p> </p> <label>
+            Додати коментар
+          <label>  <textarea name="comments"></textarea>          </label>
+  <label> <input type="button" value="Відправити"> </label>
+</form>
+  </div>
+
+ 
+
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Укладка тротуарної плитки</h2>
+      <div class="fakeimg"><img src=значок1.jpg height=90 weight=180></div>
+      <p>Професійна укладка тротуарної плитки за будь-яким ландшафтним проектом</p>
+    </div>
+   
+   
+  </div>
+</div>
+
+<form>
+<label> <a href="../../index.html"><font color="#3867d6" size=4><input type="button" value="Головна"></font></a></label>
+</form>
+
+
+</body>
+</html>
